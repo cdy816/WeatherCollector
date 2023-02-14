@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+
+
+  <ItemGroup>
+    <EmbeddedResource Include="WeatherList.txt" />
+  </ItemGroup>
+
+
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
+  </ItemGroup>
+
+
+
+  <ItemGroup>
+    <Reference Include="Cdy.Tag">
+      <HintPath>..\Dev\mars\Output\Cdy.Tag.dll</HintPath>
+    </Reference>
+    <Reference Include="Cdy.Tag.Network">
+      <HintPath>..\Dev\mars\Output\Cdy.Tag.Network.dll</HintPath>
+    </Reference>
+    <Reference Include="Cheetah">
+      <HintPath>..\Dev\mars\Output\Cheetah.dll</HintPath>
+    </Reference>
+    <Reference Include="DirectAccessDriver.ClientApi">
+      <HintPath>..\Dev\mars\Output\DirectAccessDriver.ClientApi.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
